@@ -36,10 +36,10 @@ function MovieForm(props) {
                 <textarea type="text" id="plot" value={plot} onChange={(e) => setPlot(e.target.value)} />
                 <br/>
                 <label htmlFor="year">Year:</label>
-                <input type="text" id="year" value={year} onChange={(e) => setYear(e.target.value)} />
+                <input type="number" step="1" min={1900} id="year" value={year} onChange={(e) => setYear(e.target.value)} />
                 <br />
                 <label htmlFor="imdbRating">IMDB Rating:</label>
-                <input type="text" id="imdbRating" value={imdbRating} onChange={(e) => setImdbRating(e.target.value)} />
+                <input type="number" step="0.1" id="imdbRating" value={imdbRating} onChange={(e) => setImdbRating(e.target.value)} />
                 <br />
                 <button>Add Movie</button>
             </form>

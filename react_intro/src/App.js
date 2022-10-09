@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MovieForm from './MovieForm';
+import MovieDisplay from './MovieDisplay';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App App-header">
       <MovieForm addMovie={addMovie} />
+      <MovieDisplay movieList={movieList} />
     </div>
   );
 }
