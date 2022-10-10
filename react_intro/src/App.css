@@ -1,6 +1,9 @@
 .App {
   align-items: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .App.App-header div.movie-form {
   font-size: calc(12px + 2vmin);
@@ -10,6 +13,19 @@
   border-radius: 13px;
   width: 60%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.App.App-header div.movie-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(12px + 2vmin);
+  color: black;
+  background-color: #a6a6a7;
+  padding: 10px;
+  border-radius: 13px;
+  width: 60%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
 }
 
 .App.App-header div.movie-box-header {
@@ -39,7 +55,26 @@
   border-radius: 13px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
+.App.App-header div.movie-display ul li h5 {
+  font-size: calc(12px + 2vmin);
+  color: rgb(255, 255, 255);
+  background-color: #8383ff;
+  width: auto;
+  padding: 10px 8px 13px 8px;
+  margin-bottom: 0%;
+} 
 
+.App.App-header div.movie-display ul li {
+  display: inline-block;
+  margin: 5px;
+  list-style-type: none;
+  font-size: calc(10px + 1vmin);
+  color: black;
+  background-color: #ffffff;
+  padding: 0px 0px 0px 0px;
+  background: linear-gradient(rgba(0,0,0,1) 30%, rgba(255,255,255,1) 50%);
+  border-radius: 35px 10px 4px 4px ;
+}
 .App.App-header div.movie-form textarea {
   width: 70%;
   margin: 10px;

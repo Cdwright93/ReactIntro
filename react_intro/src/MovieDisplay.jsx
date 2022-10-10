@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from "react";
+
 
 function MovieDisplay(props) {
     let movies = props.movieList
@@ -14,15 +14,16 @@ function MovieDisplay(props) {
             return (
                 <div className="movie-display">
                     <h3 className="movie-box-header">Movies</h3>
-                    <ul>
+                    <ul className='movie-list'>
                         {movies.map((movie) => (
-                            <li key={movie.id}>
-                                <p>Title: {movie.title}</p>
-                                <p>Director: {movie.director}</p>
-                                <p>Actors: {movie.actors}</p>
-                                <p>Plot: {movie.plot}</p>
-                                <p>Year: {movie.year}</p>
-                                <p>IMDB Rating: {movie.imdbRating}</p>
+                            <li key={movie.id} className="movie-card-item">
+                                <h5 className='movie-card-item-title'>{movie.title}</h5>
+                                <img className="movie-card-item-image" src={movie.image} alt={movie.title} />
+                                <p className='movie-card-item-director'>Director: {movie.director}</p>
+                                <p className='movie-card-item-actors'>Actors: {movie.actors}</p>
+                                <p className='movie-card-item-actors'>Plot: {movie.plot}</p>
+                                <p className='movie-card-item-year'>Year: {movie.year}</p>
+                                <p className='movie-card-item-rating'>IMDB Rating: {movie.imdbRating}</p>
                             </li>
                         ))}
                     </ul>

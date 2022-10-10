@@ -8,16 +8,18 @@ function MovieForm(props) {
     const [plot, setPlot] = useState("");
     const [year, setYear] = useState("");
     const [imdbRating, setImdbRating] = useState("");
+    const [image, setImage] = useState("https://powderalloy.com/wp-content/uploads/2015/11/sidebar-placeholder.png");
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.addMovie({ title, director, actors, plot, year, imdbRating });
+        props.addMovie({ title, director, actors, plot, year, imdbRating, image });
         setTitle("");
         setDirector("");
         setActors("");
         setPlot("");
         setYear("");
         setImdbRating("");
+        setImage("https://powderalloy.com/wp-content/uploads/2015/11/sidebar-placeholder.png");
     }
     return (
         <div className="movie-form">
