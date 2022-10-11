@@ -56,7 +56,7 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 .App.App-header div.movie-display ul li h5 {
-  font-size: calc(12px + 2vmin);
+  font-size: calc(9px + 1vmin);
   color: rgb(255, 255, 255);
   background-color: #8383ff;
   width: auto;
